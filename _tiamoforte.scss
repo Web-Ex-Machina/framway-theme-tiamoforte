@@ -207,7 +207,7 @@ body.home{
 		}
 	}
 	&.img--rounded{
-		img{border-radius: 100%; overflow: hidden; shape-outside: margin-box; border-bottom: 8px solid var(--primary);}
+		img{border-radius: 100%; overflow: hidden; shape-outside: margin-box; border-bottom: 8px solid var(--primary); aspect-ratio: 1; object-fit: cover;}
 	}
 	&.media{
 		>figure{margin: 0;}
