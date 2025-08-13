@@ -148,6 +148,8 @@ html:has(body.slidy){
 		& i[class*="fa"],
 		& svg{--btn-font-color: var(--primary); color: var(--btn-font-color);}
 
+		&.active,
+		&:focus,
 		&:hover{
 			--btn-font-color: #{btn(font-color)};
 			& i[class*="fa"],
@@ -206,12 +208,15 @@ body.home{
 
 .headerFW{
 	&.is-pinned{background: linear-gradient(to bottom, rgba(body(background),0.35), transparent);}
+	&.is-reduce,
+	&.is-open,
 	&.is-pinned,
 	&.is-unpinned{
-		.headerFW__logo__wrapper img{max-height: 100%; object-fit: contain}
+		.headerFW__logo__wrapper img{max-height: 100%; object-fit: contain;}
 	}
+	&.is-open{background: body(background);}
 }
-.headerFW__logo__wrapper img{max-height: none;}
+.headerFW__logo__wrapper img{max-height: none; object-position: left}
 
 
 .content-text{
